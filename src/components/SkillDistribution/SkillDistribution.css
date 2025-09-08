@@ -1,0 +1,168 @@
+.skill-distribution {
+  background-color: #1a1a1a;
+  border-radius: 16px;
+  padding: 20px;
+  color: #ffffff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin-bottom: 20px;
+}
+
+.skill-distribution:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+}
+
+.distribution-header {
+  margin-bottom: 15px;
+}
+
+.distribution-header h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+  color: #ffffff;
+}
+
+.distribution-chart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.distribution-chart canvas {
+  max-width: 100%;
+  height: auto;
+}
+
+.distribution-legend {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+}
+
+.legend-color {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.legend-info {
+  display: flex;
+  align-items: center;
+}
+
+.legend-percentage {
+  font-weight: 600;
+  font-size: 14px;
+  margin-right: 8px;
+  min-width: 30px;
+}
+
+.legend-label {
+  font-size: 13px;
+  color: #a0a0a0;
+}
+
+/* Tooltip/Popup Styles */
+.legend-item {
+  position: relative;
+  cursor: pointer;
+}
+
+.skill-topics-popup {
+  position: absolute;
+  right: calc(100% + 15px);
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #2a2a2a;
+  color: white;
+  padding: 12px 16px;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  z-index: 1000; /* Increased z-index to ensure it appears on top */
+  width: 200px;
+  border: 1px solid #444;
+  max-height: 250px;
+  overflow-y: auto; /* Add scrolling for long content */
+}
+
+.skill-topics-popup:after {
+  content: '';
+  position: absolute;
+  right: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent transparent #2a2a2a;
+}
+
+.skill-topics-popup h4 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.skill-topics-popup ul {
+  margin: 0;
+  padding-left: 16px;
+}
+
+.skill-topics-popup li {
+  margin-bottom: 4px;
+  font-size: 14px;
+  color: #cccccc;
+}
+
+/* Mobile-specific styles for tooltips */
+@media (max-width: 768px) {
+  .skill-topics-popup {
+    right: auto;
+    left: 50%;
+    top: -120px; /* Position above instead of below */
+    transform: translateX(-50%);
+    max-width: 90vw; /* Prevent overflow on small screens */
+    width: 250px;
+  }
+  
+  .skill-topics-popup:after {
+    right: auto;
+    left: 50%;
+    top: 100%; /* Arrow at bottom */
+    transform: translateX(-50%);
+    border-color: #2a2a2a transparent transparent transparent;
+  }
+}
+
+@media (max-width: 480px) {
+  .skill-distribution {
+    padding: 15px;
+  }
+  
+  .distribution-chart {
+    margin-bottom: 15px;
+  }
+  
+  .distribution-chart canvas {
+    width: 160px;
+    height: 160px;
+  }
+  
+  .legend-percentage {
+    font-size: 13px;
+  }
+  
+  .legend-label {
+    font-size: 12px;
+  }
+}

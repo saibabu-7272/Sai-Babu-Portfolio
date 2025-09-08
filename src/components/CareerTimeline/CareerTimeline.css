@@ -1,0 +1,257 @@
+.career-timeline {
+  background-color: #1a1a1a;
+  border-radius: 16px;
+  padding: 20px;
+  color: #ffffff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin-bottom: 20px;
+}
+
+.career-timeline:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+}
+
+.timeline-header {
+  margin-bottom: 25px;
+}
+
+.timeline-header h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+  color: #ffffff;
+}
+
+.timeline-wrapper {
+  position: relative;
+  padding-left: 40px;
+}
+
+.timeline-track {
+  position: absolute;
+  left: 15px;
+  top: 10px;
+  bottom: 10px;
+  width: 2px;
+  background-color: #2a2a2a;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-marker {
+  position: absolute;
+  left: -40px;
+  top: 15px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #4dabf7;
+  z-index: 2;
+  transform: translateX(-50%);
+}
+
+/* Different colors for different types */
+.timeline-item.education .timeline-marker {
+  background-color: #4dabf7; /* blue */
+}
+
+.timeline-item.training .timeline-marker {
+  background-color: #82c91e; /* green */
+}
+
+.timeline-item.project .timeline-marker {
+  background-color: #f76707; /* orange */
+}
+
+.timeline-item.internship .timeline-marker {
+  background-color: #ae3ec9; /* purple */
+}
+
+.timeline-content {
+  position: relative;
+}
+
+.timeline-date {
+  font-size: 14px;
+  font-weight: 600;
+  color: #a0a0a0;
+  margin-bottom: 10px;
+}
+
+.timeline-card {
+  display: flex;
+  background-color: #2a2a2a;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.timeline-card:hover {
+  transform: translateY(-3px);
+}
+
+.timeline-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  font-size: 20px;
+  padding: 15px 0;
+  background-color: #4dabf7;
+}
+
+/* Different colors for different types */
+.timeline-icon.education {
+  background-color: #4dabf7; /* blue */
+}
+
+.timeline-icon.training {
+  background-color: #82c91e; /* green */
+}
+
+.timeline-icon.project {
+  background-color: #f76707; /* orange */
+}
+
+.timeline-icon.internship {
+  background-color: #ae3ec9; /* purple */
+}
+
+.timeline-details {
+  flex-grow: 1;
+  padding: 15px;
+}
+
+.timeline-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 5px 0;
+  color: #ffffff;
+}
+
+.timeline-organization {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0 0 10px 0;
+  color: #c0c0c0;
+}
+
+.timeline-description {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #a0a0a0;
+  margin: 0 0 10px 0;
+}
+
+.timeline-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.timeline-skill {
+  background-color: rgba(77, 171, 247, 0.1);
+  border: 1px solid rgba(77, 171, 247, 0.2);
+  border-radius: 10px;
+  padding: 3px 8px;
+  font-size: 12px;
+  color: #4dabf7;
+}
+
+/* Different colors for different types */
+.timeline-item.education .timeline-skill {
+  background-color: rgba(77, 171, 247, 0.1);
+  border-color: rgba(77, 171, 247, 0.2);
+  color: #4dabf7;
+}
+
+.timeline-item.training .timeline-skill {
+  background-color: rgba(130, 201, 30, 0.1);
+  border-color: rgba(130, 201, 30, 0.2);
+  color: #82c91e;
+}
+
+.timeline-item.project .timeline-skill {
+  background-color: rgba(247, 103, 7, 0.1);
+  border-color: rgba(247, 103, 7, 0.2);
+  color: #f76707;
+}
+
+.timeline-item.internship .timeline-skill {
+  background-color: rgba(174, 62, 201, 0.1);
+  border-color: rgba(174, 62, 201, 0.2);
+  color: #ae3ec9;
+}
+
+@media (max-width: 768px) {
+  .timeline-wrapper {
+    padding-left: 30px;
+  }
+  
+  .timeline-marker {
+    left: -30px;
+    width: 12px;
+    height: 12px;
+  }
+  
+  .timeline-track {
+    left: 12px;
+  }
+  
+  .timeline-icon {
+    width: 40px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .career-timeline {
+    padding: 15px;
+  }
+  
+  .timeline-wrapper {
+    padding-left: 25px;
+  }
+  
+  .timeline-marker {
+    left: -25px;
+    width: 10px;
+    height: 10px;
+  }
+  
+  .timeline-track {
+    left: 10px;
+  }
+  
+  .timeline-icon {
+    width: 35px;
+    font-size: 16px;
+    padding: 12px 0;
+  }
+  
+  .timeline-details {
+    padding: 12px;
+  }
+  
+  .timeline-title {
+    font-size: 15px;
+  }
+  
+  .timeline-organization {
+    font-size: 13px;
+  }
+  
+  .timeline-description {
+    font-size: 13px;
+  }
+}

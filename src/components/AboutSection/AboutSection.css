@@ -1,0 +1,125 @@
+.about-section {
+  background-color: #1a1a1a;
+  border-radius: 16px;
+  padding: 20px;
+  color: #ffffff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin-bottom: 20px;
+}
+
+.about-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+}
+
+.about-header {
+  margin-bottom: 20px;
+}
+
+.about-header h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+  color: #ffffff;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.section-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 12px 0;
+  color: #4dabf7;
+}
+
+.objective-text {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #d0d0d0;
+  margin: 0;
+}
+
+.education-timeline {
+  position: relative;
+  padding-left: 20px;
+}
+
+.education-timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 4px;
+  width: 2px;
+  background-color: #2a2a2a;
+}
+
+.education-item {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.education-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -20px;
+  top: 8px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #4dabf7;
+  z-index: 1;
+}
+
+.education-content {
+  padding-left: 15px;
+}
+
+.institution {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0 0 5px 0;
+  color: #ffffff;
+}
+
+.degree {
+  font-size: 14px;
+  color: #c0c0c0;
+  margin: 0 0 5px 0;
+}
+
+.period {
+  font-size: 13px;
+  color: #a0a0a0;
+  margin: 0;
+}
+
+@media (max-width: 480px) {
+  .about-section {
+    padding: 15px;
+  }
+  
+  .objective-text {
+    font-size: 14px;
+  }
+  
+  .institution {
+    font-size: 14px;
+  }
+  
+  .degree {
+    font-size: 13px;
+  }
+  
+  .period {
+    font-size: 12px;
+  }
+}

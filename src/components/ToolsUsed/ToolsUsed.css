@@ -1,0 +1,126 @@
+.tools-used {
+  background-color: #1a1a1a;
+  border-radius: 16px;
+  padding: 20px;
+  color: #ffffff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin-bottom: 20px;
+}
+
+.tools-used:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+}
+
+.tools-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.tools-header h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+  color: #ffffff;
+}
+
+.tools-badge {
+  background-color: #2a2a2a;
+  border-radius: 12px;
+  padding: 4px 8px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #a0a0a0;
+}
+
+.tools-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.tool-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 12px;
+  background-color: #2a2a2a;
+  transition: background-color 0.2s;
+}
+
+.tool-item:hover {
+  background-color: #3a3a3a;
+}
+
+.tool-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+  font-size: 18px;
+  background-color: #4dabf7;
+  flex-shrink: 0;
+}
+
+.tool-info {
+  flex-grow: 1;
+  margin-right: 12px;
+}
+
+.tool-name {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.tool-progress-container {
+  height: 6px;
+  background-color: #1a1a1a;
+  border-radius: 3px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.tool-progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #4dabf7, #15aabf);
+}
+
+.tool-proficiency {
+  font-size: 14px;
+  font-weight: 600;
+  color: #4dabf7;
+  min-width: 40px;
+  text-align: right;
+}
+
+@media (max-width: 480px) {
+  .tools-used {
+    padding: 15px;
+  }
+  
+  .tool-item {
+    padding: 8px;
+  }
+  
+  .tool-icon {
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+  }
+  
+  .tool-name {
+    font-size: 13px;
+  }
+  
+  .tool-proficiency {
+    font-size: 13px;
+    min-width: 35px;
+  }
+}
