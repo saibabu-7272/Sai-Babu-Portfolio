@@ -195,6 +195,48 @@ export const projectsData = [
       'Project showcase',
       'Skills and education section'
     ]
+  },
+  {
+    id: 'bookfinder',
+    title: 'Book Finder',
+    description: 'Previous version of my portfolio website showcasing my skills and projects.',
+    techStack: ['HTML', 'CSS', 'JavaScript'],
+    image: '/project-images/old-portfolio.jpg', 
+    liveLink: 'https://book-finder-topaz.vercel.app/',
+    githubLink: 'https://github.com/saibabu-7272/Book-Finder',
+    features: [
+      'Responsive design',
+      'Project showcase',
+      'Skills and education section'
+    ]
+  },
+{
+    id: 'appstore',
+    title: 'App Store',
+    description: 'Previous version of my portfolio website showcasing my skills and projects.',
+    techStack: ['HTML', 'CSS', 'JavaScript'],
+    image: '/project-images/old-portfolio.jpg', 
+    liveLink: 'https://saibabuappstore.ccbp.tech/',
+    githubLink: 'https://saibabuappstore.ccbp.tech/',
+    features: [
+      'Responsive design',
+      'Project showcase',
+      'Skills and education section'
+    ]
+  },
+{
+    id: 'projectsshow',
+    title: 'My Projects Show',
+    description: 'Previous version of my portfolio website showcasing my skills and projects.',
+    techStack: ['HTML', 'CSS', 'JavaScript'],
+    image: '/project-images/old-portfolio.jpg', 
+    liveLink: 'https://saiwebprojects.ccbp.tech/',
+    githubLink: 'https://saiwebprojects.ccbp.tech/',
+    features: [
+      'Responsive design',
+      'Project showcase',
+      'Skills and education section'
+    ]
   }
 ];
 
