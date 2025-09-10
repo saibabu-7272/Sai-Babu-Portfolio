@@ -350,7 +350,7 @@ export const socialLinks = [
   {
     id: 'phone',
     name: 'Phone',
-    url: 'tel:+919989194509',
+    url: 'tel:+919010415625',
     icon: '📱'
   },
   {
@@ -363,10 +363,19 @@ export const socialLinks = [
 
 export const timelineData = [
   {
+    id: 'project1',
+    title: 'Local Connect Project',
+    organization: 'Nxtwave Project',
+    period: 'Jan 2025',
+    description: 'Built a full-stack application connecting local service providers with customers. Implemented authentication, location-based search, and service booking.',
+    type: 'project',
+    skills: ['React.js', 'Node.js', 'MongoDB', 'JWT']
+  },
+  {
     id: 'training',
     title: 'Full-Stack Development Training',
     organization: 'Nxtwave Disruptive Technologies',
-    period: 'Jan 2024 - Present',
+    period: 'Jan 2024 - 2025',
     description: 'Learning MERN Stack development. Completed several projects including Local Connect, Emoji Game, and Portfolio Website.',
     type: 'training',
     skills: ['React.js', 'Node.js', 'Express.js', 'MongoDB']
@@ -379,15 +388,6 @@ export const timelineData = [
     description: 'Studied Mathematics, Physics, and Computer Science. Focused on programming fundamentals and mathematical problem solving.',
     type: 'education',
     skills: ['Python', 'Data Structures', 'Algorithms']
-  },
-  {
-    id: 'project1',
-    title: 'Local Connect Project',
-    organization: 'Nxtwave Project',
-    period: 'May 2024',
-    description: 'Built a full-stack application connecting local service providers with customers. Implemented authentication, location-based search, and service booking.',
-    type: 'project',
-    skills: ['React.js', 'Node.js', 'MongoDB', 'JWT']
   },
   {
     id: 'education2',
