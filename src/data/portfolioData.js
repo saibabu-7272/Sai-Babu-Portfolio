@@ -36,28 +36,28 @@ export const learningTrackerData = [
   {
     id: 'react',
     subject: 'React JS',
-    icon: '⚛️',
+    iconKey: 'react',
     hours: 215,
     progress: 85
   },
   {
     id: 'node',
     subject: 'Node/Express',
-    icon: '🚀',
+    iconKey: 'node',
     hours: 145,
     progress: 70
   },
   {
     id: 'mongodb',
     subject: 'MongoDB',
-    icon: '🍃',
+    iconKey: 'mongodb',
     hours: 105,
     progress: 65
   },
   {
     id: 'job',
     subject: 'Job Applications',
-    icon: '📝',
+    iconKey: 'jobApplications',
     hours: 45,
     progress: 40
   }
@@ -144,12 +144,12 @@ export const tasksTimelineData = [
 ];
 
 export const toolsUsedData = [
-  { id: 'vscode', name: 'VS Code', proficiency: 90, icon: '💻' },
-  { id: 'figma', name: 'Figma', proficiency: 75, icon: '🎨' },
-  { id: 'devtools', name: 'Chrome DevTools', proficiency: 85, icon: '🔍' },
-  { id: 'github', name: 'GitHub', proficiency: 80, icon: '🐙' },
-  { id: 'chatgpt', name: 'ChatGPT', proficiency: 85, icon: '🤖' },
-  { id: 'windsurf', name: 'Windsurf', proficiency: 70, icon: '🌊' }
+  { id: 'vscode', name: 'VS Code', proficiency: 90, iconKey: 'vscode' },
+  { id: 'figma', name: 'Figma', proficiency: 75, iconKey: 'figma' },
+  { id: 'devtools', name: 'Chrome DevTools', proficiency: 85, iconKey: 'devtools' },
+  { id: 'github', name: 'GitHub', proficiency: 80, iconKey: 'github' },
+  { id: 'chatgpt', name: 'ChatGPT', proficiency: 85, iconKey: 'chatgpt' },
+  { id: 'windsurf', name: 'Windsurf', proficiency: 70, iconKey: 'windsurf' }
 ];
 
 export const projectsData = [
@@ -269,28 +269,28 @@ export const educationData = [
 
 export const techStackData = {
   frontend: [
-    { name: 'HTML', icon: '🌐', proficiency: 90, topics: ['HTML5', 'Semantic Markup', 'Accessibility', 'Forms', 'Canvas'] },
-    { name: 'CSS', icon: '🎨', proficiency: 85, topics: ['CSS3', 'Flexbox', 'Grid', 'Animations', 'Media Queries', 'SASS/SCSS'] },
-    { name: 'JavaScript', icon: '📜', proficiency: 80, topics: ['ES6+', 'DOM Manipulation', 'Async/Await', 'Fetch API', 'Event Handling'] },
-    { name: 'React.js', icon: '⚛️', proficiency: 80, topics: ['Hooks', 'Context API', 'Redux', 'React Router', 'Component Lifecycle'] },
-    { name: 'Bootstrap', icon: '🅱️', proficiency: 75, topics: ['Grid System', 'Components', 'Utilities', 'Customization', 'Responsive Design'] },
-    { name: 'Flexbox', icon: '📐', proficiency: 85, topics: ['Container Properties', 'Item Properties', 'Alignment', 'Ordering', 'Responsive Layouts'] }
+    { name: 'HTML', iconKey: 'html', proficiency: 90, topics: ['HTML5', 'Semantic Markup', 'Accessibility', 'Forms', 'Canvas'] },
+    { name: 'CSS', iconKey: 'css', proficiency: 85, topics: ['CSS3', 'Flexbox', 'Grid', 'Animations', 'Media Queries', 'SASS/SCSS'] },
+    { name: 'JavaScript', iconKey: 'javascript', proficiency: 80, topics: ['ES6+', 'DOM Manipulation', 'Async/Await', 'Fetch API', 'Event Handling'] },
+    { name: 'React.js', iconKey: 'react', proficiency: 80, topics: ['Hooks', 'Context API', 'Redux', 'React Router', 'Component Lifecycle'] },
+    { name: 'Bootstrap', iconKey: 'bootstrap', proficiency: 75, topics: ['Grid System', 'Components', 'Utilities', 'Customization', 'Responsive Design'] },
+    { name: 'Flexbox', iconKey: 'flexbox', proficiency: 85, topics: ['Container Properties', 'Item Properties', 'Alignment', 'Ordering', 'Responsive Layouts'] }
   ],
   backend: [
-    { name: 'Node.js', icon: '📊', proficiency: 70, topics: ['Express Integration', 'npm', 'File System', 'Event Loop', 'Streams'] },
-    { name: 'Express.js', icon: '🚂', proficiency: 65, topics: ['Routing', 'Middleware', 'Error Handling', 'Template Engines', 'REST API Design'] },
-    { name: 'REST APIs', icon: '🔌', proficiency: 75, topics: ['HTTP Methods', 'Status Codes', 'Authentication', 'JSON', 'API Versioning'] }
+    { name: 'Node.js', iconKey: 'node', proficiency: 70, topics: ['Express Integration', 'npm', 'File System', 'Event Loop', 'Streams'] },
+    { name: 'Express.js', iconKey: 'expressjs', proficiency: 65, topics: ['Routing', 'Middleware', 'Error Handling', 'Template Engines', 'REST API Design'] },
+    { name: 'REST APIs', iconKey: 'restapis', proficiency: 75, topics: ['HTTP Methods', 'Status Codes', 'Authentication', 'JSON', 'API Versioning'] }
   ],
   database: [
-    { name: 'MongoDB', icon: '🍃', proficiency: 60, topics: ['CRUD Operations', 'Aggregation', 'Indexing', 'Schema Design', 'Mongoose ODM'] },
-    { name: 'SQLite', icon: '💾', proficiency: 65, topics: ['SQL Queries', 'Database Design', 'Joins', 'Transactions', 'Indexing'] }
+    { name: 'MongoDB', iconKey: 'mongodb', proficiency: 60, topics: ['CRUD Operations', 'Aggregation', 'Indexing', 'Schema Design', 'Mongoose ODM'] },
+    { name: 'SQLite', iconKey: 'database', proficiency: 65, topics: ['SQL Queries', 'Database Design', 'Joins', 'Transactions', 'Indexing'] }
   ],
   other: [
-    { name: 'Git', icon: '📋', proficiency: 75, topics: ['Version Control', 'Branching', 'Merging', 'Pull Requests', 'GitHub Workflow'] },
-    { name: 'Python', icon: '🐍', proficiency: 60, topics: ['Basic Syntax', 'Data Structures', 'File I/O', 'Libraries', 'Automation'] },
-    { name: 'JWT', icon: '🔑', proficiency: 70, topics: ['Authentication', 'Token Structure', 'Verification', 'Security Practices', 'Implementation'] },
-    { name: 'UI Design', icon: '🎭', proficiency: 75, topics: ['Color Theory', 'Typography', 'User Experience', 'Responsive Design', 'Design Systems'] },
-    { name: 'Windsurf', icon: '🌊', proficiency: 70, topics: ['Agentic Development', 'Tool Integration', 'UI Frameworks', 'Code Generation', 'AI-assisted Programming'] }
+    { name: 'Git', iconKey: 'git', proficiency: 75, topics: ['Version Control', 'Branching', 'Merging', 'Pull Requests', 'GitHub Workflow'] },
+    { name: 'Python', iconKey: 'python', proficiency: 60, topics: ['Basic Syntax', 'Data Structures', 'File I/O', 'Libraries', 'Automation'] },
+    { name: 'JWT', iconKey: 'jwt', proficiency: 70, topics: ['Authentication', 'Token Structure', 'Verification', 'Security Practices', 'Implementation'] },
+    { name: 'UI Design', iconKey: 'uiDesign', proficiency: 75, topics: ['Color Theory', 'Typography', 'User Experience', 'Responsive Design', 'Design Systems'] },
+    { name: 'Windsurf', iconKey: 'windsurf', proficiency: 70, topics: ['Agentic Development', 'Tool Integration', 'UI Frameworks', 'Code Generation', 'AI-assisted Programming'] }
   ]
 };
 
@@ -333,31 +333,31 @@ export const socialLinks = [
     id: 'github',
     name: 'GitHub',
     url: 'https://github.com/saibabu-7272',
-    icon: '🐙'
+    iconKey: 'github'
   },
   {
     id: 'linkedin',
     name: 'LinkedIn',
     url: 'https://www.linkedin.com/in/sai-babu-gadida-a72666250/',
-    icon: '💼'
+    iconKey: 'linkedin'
   },
   {
     id: 'email',
     name: 'Email',
     url: 'mailto:gsaibabug@gmail.com',
-    icon: '✉️'
+    iconKey: 'email'
   },
   {
     id: 'phone',
     name: 'Phone',
     url: 'tel:+919010415625',
-    icon: '📱'
+    iconKey: 'phone'
   },
   {
     id: 'twitter',
     name: 'Twitter',
     url: 'https://twitter.com/GSaibabu0',
-    icon: '🐦'
+    iconKey: 'twitter'
   }
 ];
 

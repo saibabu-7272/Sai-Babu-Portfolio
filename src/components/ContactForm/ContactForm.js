@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './ContactForm.css';
+// Import icon configuration
+import { getIcon } from '../IconConfig';
 
 const ContactForm = () => {
   // Form state
@@ -96,7 +98,7 @@ const ContactForm = () => {
                 className="social-link"
                 aria-label={link.name}
               >
-                <span className="social-icon">{link.icon}</span>
+                <span className="social-icon">{getIcon(link.iconKey)}</span>
                 <span className="social-name">{link.name}</span>
               </a>
             ))}
@@ -147,7 +149,7 @@ const ContactForm = () => {
           )}
           
           <button type="submit" className="submit-button">
-            <span className="send-icon">📨</span>
+            <span className="send-icon">{getIcon('sendMessage')}</span>
             <span>Send Message</span>
           </button>
         </form>

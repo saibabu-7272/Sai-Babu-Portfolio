@@ -2,6 +2,8 @@ import React from 'react';
 import './LearningTracker.css';
 // Import learning tracker data from central data file
 import { learningTrackerData } from '../../data/portfolioData';
+// Import icon configuration
+import { getIcon } from '../IconConfig';
 
 const LearningTracker = () => {
   // Map the data from our central file to component structure
@@ -19,7 +21,7 @@ const LearningTracker = () => {
         <h3>Learning Tracker</h3>
         <div className="tracker-actions">
           <button className="tracker-action play" aria-label="Play">
-            <span>▶️</span>
+            {getIcon('play')}
           </button>
         </div>
       </div>
@@ -35,7 +37,7 @@ const LearningTracker = () => {
         {learningData.map((item) => (
           <div key={item.id} className="tracker-item">
             <div className="item-icon" style={{ backgroundColor: getRandomColor(item.id) }}>
-              {item.icon}
+              {getIcon(item.iconKey)}
             </div>
             <div className="item-info">
               <div className="item-label">{item.label}</div>

@@ -1,12 +1,14 @@
 .profile-card {
-  background-color: #1a1a1a;
+  background-color: #1a1a1a69;
   border-radius: 16px;
+  border:1px solid #ffffff;
   overflow: hidden;
   color: #ffffff;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
   transition: transform 0.3s, box-shadow 0.3s;
   max-width: 360px;
   margin-bottom: 20px;
+  backdrop-filter: 12px;
 }
 
 .profile-card:hover {

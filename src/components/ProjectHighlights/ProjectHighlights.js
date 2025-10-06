@@ -44,7 +44,7 @@ const ProjectHighlights = () => {
       
       <div className="project-card">
         <div className="project-image">
-          <img src={project.image} alt={project.title} />
+          <img className='projectImage' src={project.image} alt={project.title} />
         </div>
         
         <div className="project-content">

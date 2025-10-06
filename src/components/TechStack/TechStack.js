@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import './TechStack.css';
 // Import tech stack data from central data file
 import { techStackData } from '../../data/portfolioData';
+// Import icon configuration
+import { getIcon } from '../IconConfig';
 
 const TechStack = () => {
   // State for tracking which skill is being hovered/clicked
@@ -63,7 +65,7 @@ const TechStack = () => {
                       : {category, index}
                   )}
                 >
-                  <div className="skill-icon">{skill.icon}</div>
+                  <div className="skill-icon">{getIcon(skill.iconKey)}</div>
                   <div className="skill-info">
                     <div className="skill-name">{skill.name}</div>
                     <div className="proficiency-indicator">

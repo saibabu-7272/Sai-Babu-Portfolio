@@ -2,6 +2,8 @@ import React from 'react';
 import './ToolsUsed.css';
 // Import tools data from central data file
 import { toolsUsedData } from '../../data/portfolioData';
+// Import icon configuration
+import { getIcon } from '../IconConfig';
 
 const ToolsUsed = () => {
   // Use imported tools data
@@ -18,7 +20,7 @@ const ToolsUsed = () => {
         {toolsData.map((tool) => (
           <div key={tool.id} className="tool-item">
             <div className="tool-icon">
-              <span>{tool.icon}</span>
+              {getIcon(tool.iconKey)}
             </div>
             <div className="tool-info">
               <div className="tool-name">{tool.name}</div>
