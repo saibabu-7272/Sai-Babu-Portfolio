@@ -46,22 +46,27 @@
 .social-links {
   display: flex;
   flex-wrap: wrap;
+  align-items: start;
   gap: 15px;
+  margin-left:20px;
 }
 
-.social-link {
+.social-link-container {
   display: flex;
   align-items: center;
+  padding: 8px 16px;
+  border-radius: 25px;
   background-color: #2a2a2a;
-  border-radius: 20px;
-  padding: 8px 15px;
-  text-decoration: none;
   color: #ffffff;
-  transition: transform 0.2s, background-color 0.2s;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.2s, transform 0.2s;
+  width:120px;
+  text-align: center;
 }
 
-.social-link:hover {
-  background-color: #3a3a3a;
+.social-link-container:hover {
   transform: translateY(-3px);
 }
 

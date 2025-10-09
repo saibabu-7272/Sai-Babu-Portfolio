@@ -95,7 +95,7 @@ const ContactForm = () => {
                 href={link.url} 
                 target={link.id !== 'email' && link.id !== 'phone' ? '_blank' : ''}
                 rel={link.id !== 'email' && link.id !== 'phone' ? 'noopener noreferrer' : ''}
-                className="social-link"
+                className="social-link-container"
                 aria-label={link.name}
               >
                 <span className="social-icon">{getIcon(link.iconKey)}</span>
@@ -105,7 +105,7 @@ const ContactForm = () => {
           </div>
         </div>
         
-        <form className="contact-form" onSubmit={handleSubmit}>
+        {/* <form className="contact-form" onSubmit={handleSubmit}>
           <div className="form-group">
             <label htmlFor="name">Name</label>
             <input 
@@ -152,7 +152,7 @@ const ContactForm = () => {
             <span className="send-icon">{getIcon('sendMessage')}</span>
             <span>Send Message</span>
           </button>
-        </form>
+        </form> */}
       </div>
     </div>
   );
