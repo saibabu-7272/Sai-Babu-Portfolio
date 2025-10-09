@@ -26,8 +26,6 @@ export const stats = {
 
 export const weatherData = {
   city: 'Hyderabad',
-  temperature: '32°C',
-  // Update this to use actual date from the system
   currentDay: new Date().toLocaleDateString('en-US', { weekday: 'long' }),
   currentDate: new Date().toLocaleDateString('en-US', { day: 'numeric', month: 'short', year: 'numeric' })
 };
@@ -338,13 +336,13 @@ export const socialLinks = [
   {
     id: 'linkedin',
     name: 'LinkedIn',
-    url: 'https://www.linkedin.com/in/sai-babu-gadida-a72666250/',
+    url: 'https://www.linkedin.com/in/g-sai-babu-222066268/',
     iconKey: 'linkedin'
   },
   {
     id: 'email',
     name: 'Email',
-    url: 'mailto:gsaibabug@gmail.com',
+    url: 'mailto:saibabu61242@gmail.com',
     iconKey: 'email'
   },
   {
@@ -353,12 +351,6 @@ export const socialLinks = [
     url: 'tel:+919010415625',
     iconKey: 'phone'
   },
-  {
-    id: 'twitter',
-    name: 'Twitter',
-    url: 'https://twitter.com/GSaibabu0',
-    iconKey: 'twitter'
-  }
 ];
 
 export const timelineData = [

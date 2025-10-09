@@ -5,6 +5,10 @@ import placeholderImage from '../../assets/profile-placeholder.jpg';
 // Import profile data from central data file
 import { personalInfo } from '../../data/portfolioData';
 
+import { FaMapLocationDot } from "react-icons/fa6";
+
+import { getIcon } from '../IconConfig';
+
 const ProfileCard = () => {
   // Transform data into component format
   const profile = {
@@ -17,13 +21,13 @@ const ProfileCard = () => {
       {
         id: 'github',
         label: 'GitHub',
-        icon: '💻',
+        icon: getIcon('github', { size: 20 }),
         url: personalInfo.socialLinks.github
       },
       {
         id: 'linkedin',
         label: 'LinkedIn',
-        icon: '👔',
+        icon: getIcon('linkedin', { size: 20 }),
         url: personalInfo.socialLinks.linkedin
       }
     ]
@@ -39,10 +43,10 @@ const ProfileCard = () => {
           <h2 className="profile-name">{profile.name}</h2>
           <p className="profile-title">{profile.title}</p>
           <p className="profile-location">
-            <span className="location-icon">📍</span> {profile.location}
+            <span className="location-icon"><FaMapLocationDot /></span> {profile.location}
           </p>
           <p className="profile-email">
-            <span className="email-icon">✉️</span> {profile.email}
+            <span className="email-icon">{getIcon.email}</span> {profile.email}
           </p>
         </div>
         <div className="profile-social-links">
@@ -59,14 +63,14 @@ const ProfileCard = () => {
             </a>
           ))}
         </div>
-        <div className="profile-contact-buttons">
+        {/* <div className="profile-contact-buttons">
           <button className="contact-button phone">
             <span className="phone-icon">📞</span>
           </button>
           <button className="contact-button message">
             <span className="message-icon">💬</span>
           </button>
-        </div>
+        </div> */}
       </div>
     </div>
   );
