@@ -21,7 +21,7 @@ import {
 
 function App() {
   return (
-    <div className="app-container">
+    <div id="home" className="app-container">
       <Sidebar />
       
       <main className="main-content">
