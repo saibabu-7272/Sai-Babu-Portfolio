@@ -1,6 +1,5 @@
 import React from 'react';
 import './Sidebar.css';
-import WeatherWidget from '../WeatherWidget/WeatherWidget';
 // Import personal info from central data file
 import { personalInfo } from '../../data/portfolioData';
 // Import icon configuration

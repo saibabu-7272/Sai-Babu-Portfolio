@@ -8,7 +8,6 @@ import { getIcon } from '../IconConfig';
 const TechStack = () => {
   // State for tracking which skill is being hovered/clicked
   const [activeSkill, setActiveSkill] = useState(null);
-  const [activeCategory, setActiveCategory] = useState(null);
   const [isMobile, setIsMobile] = useState(false);
   
   // Check if device is mobile on component mount

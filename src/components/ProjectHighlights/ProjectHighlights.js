@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import './ProjectHighlights.css';
 // We'll use placeholder images until we have actual project screenshots
-import placeholderImage from '../../assets/local-connect-project.png';
 // Import projects data from central data file
 import { projectsData as projectsFromData } from '../../data/portfolioData';
 

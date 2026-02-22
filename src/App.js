@@ -1,19 +1,13 @@
-import React from 'react';
 import './App.css';
 
 // Import all components from centralized index
 import {
   Sidebar,
   ProfileCard,
-  LearningTracker,
-  SkillDistribution,
-  ActivityHeatmap,
-  TasksTimeline,
   StatsCards,
   ToolsUsed,
   ProjectHighlights,
   AboutSection,
-  ResumeSection,
   ContactForm,
   TechStack,
   CareerTimeline

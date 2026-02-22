@@ -5,22 +5,22 @@ import { stats } from '../../data/portfolioData';
 
 const StatsCards = () => {
   // Stats data using imported data
-  const statsData = [
-    {
-      id: 'experience',
-      title: 'Days in Coding',
-      value: stats.experience.toString(),
-      icon: '⏱️',
-      type: 'primary'
-    },
-    {
-      id: 'projects',
-      title: 'Projects Completed',
-      value: stats.projects.toString(),
-      icon: '📂',
-      type: 'primary'
-    }
-  ];
+  // const statsData = [
+  //   {
+  //     id: 'experience',
+  //     title: 'Days in Coding',
+  //     value: stats.experience.toString(),
+  //     icon: '⏱️',
+  //     type: 'primary'
+  //   },
+  //   {
+  //     id: 'projects',
+  //     title: 'Projects Completed',
+  //     value: stats.projects.toString(),
+  //     icon: '📂',
+  //     type: 'primary'
+  //   }
+  // ];
 
   // Special cards using imported data
   const specialCards = [
