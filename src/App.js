@@ -39,15 +39,12 @@ function App() {
             <AboutSection />
           </div>
 
-          <div className="grid-item full-width-area">
-            <ResumeSection />
-          </div>
           
           {/* SECTION 2: SKILLS */}
-          <div className="grid-item skill-area">
+          {/* <div className="grid-item skill-area">
             <SkillDistribution />
           </div>
-          
+           */}
           {/* Project Highlights - Moved right after pie chart as requested */}
           <div className="grid-item full-width-area">
             <ProjectHighlights />
@@ -58,9 +55,9 @@ function App() {
             <TechStack />
           </div>
           
-          <div className="grid-item learning-area">
+          {/* <div className="grid-item learning-area">
             <LearningTracker />
-          </div>
+          </div> */}
 {/* 
           <div className="grid-item heatmap-area">
             <ActivityHeatmap />
@@ -70,14 +67,16 @@ function App() {
             <TasksTimeline />
           </div>
            */}
-          {/* SECTION 4: TOOLS */}
-          <div className="grid-item tools-area">
-            <ToolsUsed />
-          </div>
+
           
           {/* SECTION 5: EDUCATION/CAREER */}
           <div className="grid-item full-width-area">
             <CareerTimeline />
+          </div>
+
+          {/* SECTION 4: TOOLS */}
+          <div className="grid-item tools-area">
+            <ToolsUsed />
           </div>
           
           {/* SECTION 6: CONTACT (FOOTER) */}

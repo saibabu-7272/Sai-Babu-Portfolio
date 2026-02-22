@@ -40,7 +40,7 @@ const TechStack = () => {
   };
 
   return (
-    <div className="tech-stack">
+    <div className="tech-stack" id="skills">
       <div className="tech-stack-header">
         <h3>Tech Stack</h3>
       </div>

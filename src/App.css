@@ -36,28 +36,28 @@ body {
 
 /* Specific grid areas */
 .profile-card-area {
-  grid-column: 1 / 2;
+  grid-column: 1/3;
   grid-row: 1;
 }
 
 .stats-area {
-  grid-column: 2 / 4;
+  grid-column: 3 / 4;
   grid-row: 1;
 }
 
 .skill-area {
-  grid-column: 1 / 2;
-  grid-row: 2;
+  grid-column: 1 / 3;
+  grid-row: 3;
 }
 
 .learning-area {
   grid-column: 2 / 3;
-  grid-row: 2;
+  grid-row: 4;
 }
 
 .tools-area {
-  grid-column: 3 / 4;
-  grid-row: 2;
+  grid-column: 1 / 4;
+  grid-row: 4;
 }
 
 .heatmap-area {
@@ -91,7 +91,7 @@ body {
   }
   
   .skill-area {
-    grid-column: 1 / 2;
+    grid-column: 1 / 3;
     grid-row: 2;
   }
   

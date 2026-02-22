@@ -32,15 +32,13 @@ const StatsCards = () => {
       type: stats.openToWork ? 'info' : 'secondary'
     },
     {
-      id: 'downloadResume',
-      title: 'Download Resume',
+      id: 'viewResume',
+      title: 'View Resume',
       description: 'PDF Format',
       icon: '📄',
       type: 'action',
       onClick: () => {
-        // In a real implementation, this would link to a resume download
-        // We could use stats.resumeUrl for a real file download
-        alert('Resume download would start here!');
+        window.open(stats.resumeUrl, '_blank');
       }
     }
   ];
@@ -48,7 +46,7 @@ const StatsCards = () => {
   return (
     <div className="stats-container">
       {/* Regular stats cards */}
-      <div className="stats-row">
+      {/* <div className="stats-row">
         {statsData.map((stat) => (
           <div key={stat.id} className={`stat-card stat-${stat.type}`}>
             <div className="stat-content">
@@ -61,7 +59,7 @@ const StatsCards = () => {
             </div>
           </div>
         ))}
-      </div>
+      </div> */}
 
       {/* Special cards */}
       <div className="stats-row">
@@ -86,13 +84,14 @@ const StatsCards = () => {
         ))}
         
       </div>
-      {/*view resume*/}
+      {/*view resume
       
       <a href='https://drive.google.com/file/d/1mwaMgFMfw8-KtFqubUXHlvvA7OvZnoII/view?usp=sharing' target="_black" >
         <div className="special-card">
           <div>View Resume</div>
         </div>
       </a>
+      */}
     </div>
   );
 };

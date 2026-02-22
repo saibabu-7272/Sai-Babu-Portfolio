@@ -3,6 +3,7 @@ import './ContactForm.css';
 // Import icon configuration
 import { getIcon } from '../IconConfig';
 
+
 const ContactForm = () => {
   // Form state
   const [formData, setFormData] = useState({
@@ -10,6 +11,7 @@ const ContactForm = () => {
     email: '',
     message: ''
   });
+  const [result, setResult] = useState("");
   
   // Form submission status
   const [submitStatus, setSubmitStatus] = useState({
@@ -57,10 +59,24 @@ const ContactForm = () => {
     
     // In a real implementation, this would send the form data to a server
     // For now, we'll just simulate a successful submission
+
+  };
+
+    const onSubmit = async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+    formData.append("access_key", process.env.REACT_APP_WEB3FORMS_ACCESS_KEY);
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData
+    });
+
+    const data = await response.json();
     setSubmitStatus({
       submitted: true,
-      success: true,
-      message: 'Message sent successfully! I will get back to you soon.'
+      success: data.success,
+      message: data.success ? 'Message sent successfully! I will get back to you soon.' : 'Failed to send message. Please try again.'
     });
     
     // Reset form
@@ -104,8 +120,8 @@ const ContactForm = () => {
             ))}
           </div>
         </div>
-        
-        {/* <form className="contact-form" onSubmit={handleSubmit}>
+
+        <form className="contact-form" onSubmit={onSubmit}>
           <div className="form-group">
             <label htmlFor="name">Name</label>
             <input 
@@ -152,7 +168,7 @@ const ContactForm = () => {
             <span className="send-icon">{getIcon('sendMessage')}</span>
             <span>Send Message</span>
           </button>
-        </form> */}
+        </form>
       </div>
     </div>
   );

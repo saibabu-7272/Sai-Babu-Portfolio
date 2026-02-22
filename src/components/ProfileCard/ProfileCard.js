@@ -42,14 +42,16 @@ const ProfileCard = () => {
         <div className="profile-info">
           <h2 className="profile-name">{profile.name}</h2>
           <p className="profile-title">{profile.title}</p>
+          {/* <p>
+            I am a Full Stack Developer skilled in MERN stack technologies with a strong interest in building real-world web applications. I have experience in authentication systems, API integration, and database management. I am currently seeking an opportunity to grow as a developer and contribute to impactful projects.
+          </p> */}
           <p className="profile-location">
             <span className="location-icon"><FaMapLocationDot /></span> {profile.location}
           </p>
           <p className="profile-email">
             <span className="email-icon">{getIcon.email}</span> {profile.email}
           </p>
-        </div>
-        <div className="profile-social-links">
+                  <div className="profile-social-links">
           {profile.socialLinks.map((link) => (
             <a 
               key={link.id}
@@ -63,6 +65,8 @@ const ProfileCard = () => {
             </a>
           ))}
         </div>
+        </div>
+
         {/* <div className="profile-contact-buttons">
           <button className="contact-button phone">
             <span className="phone-icon">📞</span>

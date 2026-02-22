@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './ProjectHighlights.css';
 // We'll use placeholder images until we have actual project screenshots
-import placeholderImage from '../../assets/profile-placeholder.jpg';
+import placeholderImage from '../../assets/local-connect-project.png';
 // Import projects data from central data file
 import { projectsData as projectsFromData } from '../../data/portfolioData';
 
@@ -9,7 +9,6 @@ const ProjectHighlights = () => {
   // Map the imported projects data to the component's data structure
   const projectsData = projectsFromData.map(project => ({
     ...project,
-    image: placeholderImage // Still using placeholder for now until real images are available
   }));
 
   // State to track current project index
@@ -28,7 +27,7 @@ const ProjectHighlights = () => {
   const project = projectsData[currentProject];
 
   return (
-    <div className="project-highlights">
+    <div className="project-highlights" id='projects'>
       <div className="highlights-header">
         <h3>Project Highlights</h3>
         <div className="navigation-dots">

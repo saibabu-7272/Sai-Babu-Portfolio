@@ -3,6 +3,12 @@
  * All portfolio content is stored here for easy updates and maintenance
  */
 
+import localConnectProjectImage from '../assets/local-connect-project.png'; 
+import emojiGameImage from '../assets/emoji-game-project.png';
+import bookFinderImage from '../assets/book-finder-project.png';
+import appStoreImage from '../assets/app-store-project.png';
+import projectsShowImage from '../assets/projects-show-project.png';
+
 export const personalInfo = {
   name: 'Sai Babu Gadida',
   title: 'Full Stack Developer',
@@ -20,7 +26,7 @@ export const personalInfo = {
 export const stats = {
   experience: 609, // Days of coding experience
   projects: 15,    // Number of projects completed
-  openToWork: true,
+  openToWork: false,
   resumeUrl: 'https://drive.google.com/file/d/1mwaMgFMfw8-KtFqubUXHlvvA7OvZnoII/view?usp=sharing' // Anchor link to resume section
 };
 
@@ -156,7 +162,7 @@ export const projectsData = [
     title: 'Local Connect',
     description: 'A Full-stack web application that connects local service providers (electricians, plumbers) with nearby customers.',
     techStack: ['React JS', 'Node JS', 'Express JS', 'MongoDB', 'JWT'],
-    image: '/project-images/local-connect.jpg', // Replace with actual image path
+    image: localConnectProjectImage, // Replace with actual image path
     liveLink: 'https://local-connect-5mxf.onrender.com',
     githubLink: 'https://github.com/saibabu-7272/local-connect',
     features: [
@@ -171,7 +177,7 @@ export const projectsData = [
     title: 'Emoji Game',
     description: 'An engaging, emoji-based memory challenge for players. Test your memory with this fun, interactive game.',
     techStack: ['React JS', 'CSS', 'JavaScript'],
-    image: '/project-images/emoji-game.jpg', // Replace with actual image path
+    image: emojiGameImage, // Replace with actual image path
     liveLink: 'http://sai7272emojig.ccbp.tech',
     githubLink: 'https://github.com/saibabu-7272/emoji-game',
     features: [
@@ -181,25 +187,11 @@ export const projectsData = [
     ]
   },
   {
-    id: 'oldportfolio',
-    title: 'Portfolio Website',
-    description: 'Previous version of my portfolio website showcasing my skills and projects.',
-    techStack: ['HTML', 'CSS', 'JavaScript'],
-    image: '/project-images/old-portfolio.jpg', // Replace with actual image path
-    liveLink: 'http://gsaibabu.onrender.com',
-    githubLink: 'https://github.com/saibabu-7272/old-portfolio',
-    features: [
-      'Responsive design',
-      'Project showcase',
-      'Skills and education section'
-    ]
-  },
-  {
     id: 'bookfinder',
     title: 'Book Finder',
     description: 'Previous version of my portfolio website showcasing my skills and projects.',
     techStack: ['HTML', 'CSS', 'JavaScript'],
-    image: '/project-images/old-portfolio.jpg', 
+    image: bookFinderImage, // Replace with actual image path
     liveLink: 'https://book-finder-topaz.vercel.app/',
     githubLink: 'https://github.com/saibabu-7272/Book-Finder',
     features: [
@@ -213,7 +205,7 @@ export const projectsData = [
     title: 'App Store',
     description: 'Previous version of my portfolio website showcasing my skills and projects.',
     techStack: ['HTML', 'CSS', 'JavaScript'],
-    image: '/project-images/old-portfolio.jpg', 
+    image: appStoreImage, // Replace with actual image path
     liveLink: 'https://saibabuappstore.ccbp.tech/',
     githubLink: 'https://saibabuappstore.ccbp.tech/',
     features: [
@@ -227,7 +219,7 @@ export const projectsData = [
     title: 'My Projects Show',
     description: 'Previous version of my portfolio website showcasing my skills and projects.',
     techStack: ['HTML', 'CSS', 'JavaScript'],
-    image: '/project-images/old-portfolio.jpg', 
+    image: projectsShowImage, 
     liveLink: 'https://saiwebprojects.ccbp.tech/',
     githubLink: 'https://saiwebprojects.ccbp.tech/',
     features: [
@@ -276,6 +268,7 @@ export const techStackData = {
   ],
   backend: [
     { name: 'Node.js', iconKey: 'node', proficiency: 70, topics: ['Express Integration', 'npm', 'File System', 'Event Loop', 'Streams'] },
+    { name: 'Python', iconKey: 'python', proficiency: 60, topics: ['Fast API', 'Pydantic Models', 'pip']},  
     { name: 'Express.js', iconKey: 'expressjs', proficiency: 65, topics: ['Routing', 'Middleware', 'Error Handling', 'Template Engines', 'REST API Design'] },
     { name: 'REST APIs', iconKey: 'restapis', proficiency: 75, topics: ['HTTP Methods', 'Status Codes', 'Authentication', 'JSON', 'API Versioning'] }
   ],
