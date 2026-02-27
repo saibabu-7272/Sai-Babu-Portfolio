@@ -26,7 +26,7 @@ export const personalInfo = {
 export const stats = {
   experience: 609, // Days of coding experience
   projects: 15,    // Number of projects completed
-  openToWork: false,
+  openToWork: true,
   resumeUrl: 'https://drive.google.com/file/d/1mwaMgFMfw8-KtFqubUXHlvvA7OvZnoII/view?usp=sharing' // Anchor link to resume section
 };
 
@@ -164,7 +164,7 @@ export const projectsData = [
     techStack: ['React JS', 'Node JS', 'Express JS', 'MongoDB', 'JWT'],
     image: localConnectProjectImage, // Replace with actual image path
     liveLink: 'https://local-connect-5mxf.onrender.com',
-    githubLink: 'https://github.com/saibabu-7272/local-connect',
+    githubLink: 'https://github.com/saibabu-7272/local-connect-app',
     features: [
       'Designed pages for Login, Home with services list',
       'Service providers rendered with user location',

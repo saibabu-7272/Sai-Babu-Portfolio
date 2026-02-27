@@ -1,6 +1,9 @@
 import './App.css';
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import BlogPage from './components/blog/blog';
+import BlogDetail from "./components/blog/BlogDetail";
+import AdminDashboard from "./components/admin/AdminDashboard";
 
-// Import all components from centralized index
 import {
   Sidebar,
   ProfileCard,
@@ -13,8 +16,8 @@ import {
   CareerTimeline
 } from './components';
 
-function App() {
-  return (
+function PortfolioComponent() {
+      return (
     <div id="home" className="app-container">
       <Sidebar />
       
@@ -80,6 +83,19 @@ function App() {
         </div>
       </main>
     </div>
+  );
+}
+
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<PortfolioComponent />} />
+        <Route exact path="/blog" element={<BlogPage />} />
+        <Route path="/blog/:slug" element={<BlogDetail />} />
+        <Route path="/admin" element={<AdminDashboard />} />
+      </Routes>
+    </Router>
   );
 }
 
