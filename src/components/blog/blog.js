@@ -37,6 +37,7 @@ function BlogPage() {
             slug={post.slug}
             author={post.author}
             date={post.createdAt}
+            content={post.content}
           />
         ))}
       </div>
